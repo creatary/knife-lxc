@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "knife-lxc"
 
   s.add_dependency 'chef',    '~> 0.10.0'
+  s.add_dependency 'toft'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
