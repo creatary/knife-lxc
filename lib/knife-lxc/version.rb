@@ -1,5 +1,3 @@
-module Knife
-  module Lxc
-    VERSION = "0.0.1"
-  end
+module KnifeLxc
+  VERSION = "0.0.1"
 end
