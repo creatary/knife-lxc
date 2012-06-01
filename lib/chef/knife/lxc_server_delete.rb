@@ -6,7 +6,7 @@ module KnifeLxc
   class LxcServerDelete < Chef::Knife
     include Toft
 
-    banner "knife lxc delete -N NODE"
+    banner "knife lxc server delete -N NODE"
 
     option :node_name,
       :short => "-N NAME",
