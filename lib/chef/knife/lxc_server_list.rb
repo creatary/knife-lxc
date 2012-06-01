@@ -11,7 +11,7 @@ module KnifeLxc
     # This method will be executed when you run this knife command.
     def run
       puts "Lxc containers list"
-      containers = `lxc-ls`.split.uniq!
+      containers = `lxc-ls`.split.uniq
       server_list = [
         ui.color('Name', :bold),
           ui.color('Ip', :bold)
