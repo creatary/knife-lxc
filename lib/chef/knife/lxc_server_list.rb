@@ -32,7 +32,8 @@ module KnifeLxc
           ip.strip!
           return ip.split("/").first
         end
-      end
+      end unless config_path.nil?
+      ""
     end
 
     def find_config(container)
@@ -48,6 +49,7 @@ module KnifeLxc
           return config_path
         end
       end
+      nil
     end
 
 
